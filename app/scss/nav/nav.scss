@@ -1,0 +1,30 @@
+.nav {
+	@include list-style-none;
+	line-height: 30px;
+	font-size: 18px;
+	background: #d7d8d9;
+	display: block;
+
+
+	&__item {
+		display: inline-block;
+		padding: 0 15px;
+
+		&-active {
+			background: $text-color;
+			color: #fff;
+		}
+	}
+}
+
+.Hot_themes {
+  font-size: 18px;
+  font-family: "PT Sans";
+  color: rgb(255, 255, 255);
+  line-height: 1.056;
+  text-align: left;
+  position: absolute;
+  left: 244px;
+  top: 35.496px;
+  z-index: 84;
+}

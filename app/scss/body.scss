@@ -1,0 +1,32 @@
+body {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	line-height: 1.286;
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+h2 {
+	margin: 0;
+	font-weight: normal;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+

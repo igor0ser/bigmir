@@ -11,6 +11,17 @@ $icon-home: x y offset_x offset_y width height total_width total_height image_pa
 At the bottom of this section, we provide information about the spritesheet itself
 $spritesheet: width height image $spritesheet-sprites;
 */
+$sprite-next-name: 'sprite_next';
+$sprite-next-x: 0px;
+$sprite-next-y: 24px;
+$sprite-next-offset-x: 0px;
+$sprite-next-offset-y: -24px;
+$sprite-next-width: 12px;
+$sprite-next-height: 24px;
+$sprite-next-total-width: 16px;
+$sprite-next-total-height: 72px;
+$sprite-next-image: 'sprite.png';
+$sprite-next: (0px, 24px, 0px, -24px, 12px, 24px, 16px, 72px, 'sprite.png', 'sprite_next', );
 $sprite-photo-name: 'sprite_photo';
 $sprite-photo-x: 0px;
 $sprite-photo-y: 0px;
@@ -19,9 +30,9 @@ $sprite-photo-offset-y: 0px;
 $sprite-photo-width: 16px;
 $sprite-photo-height: 12px;
 $sprite-photo-total-width: 16px;
-$sprite-photo-total-height: 24px;
+$sprite-photo-total-height: 72px;
 $sprite-photo-image: 'sprite.png';
-$sprite-photo: (0px, 0px, 0px, 0px, 16px, 12px, 16px, 24px, 'sprite.png', 'sprite_photo', );
+$sprite-photo: (0px, 0px, 0px, 0px, 16px, 12px, 16px, 72px, 'sprite.png', 'sprite_photo', );
 $sprite-play-name: 'sprite_play';
 $sprite-play-x: 0px;
 $sprite-play-y: 12px;
@@ -30,14 +41,25 @@ $sprite-play-offset-y: -12px;
 $sprite-play-width: 16px;
 $sprite-play-height: 12px;
 $sprite-play-total-width: 16px;
-$sprite-play-total-height: 24px;
+$sprite-play-total-height: 72px;
 $sprite-play-image: 'sprite.png';
-$sprite-play: (0px, 12px, 0px, -12px, 16px, 12px, 16px, 24px, 'sprite.png', 'sprite_play', );
+$sprite-play: (0px, 12px, 0px, -12px, 16px, 12px, 16px, 72px, 'sprite.png', 'sprite_play', );
+$sprite-prev-name: 'sprite_prev';
+$sprite-prev-x: 0px;
+$sprite-prev-y: 48px;
+$sprite-prev-offset-x: 0px;
+$sprite-prev-offset-y: -48px;
+$sprite-prev-width: 12px;
+$sprite-prev-height: 24px;
+$sprite-prev-total-width: 16px;
+$sprite-prev-total-height: 72px;
+$sprite-prev-image: 'sprite.png';
+$sprite-prev: (0px, 48px, 0px, -48px, 12px, 24px, 16px, 72px, 'sprite.png', 'sprite_prev', );
 $spritesheet-width: 16px;
-$spritesheet-height: 24px;
+$spritesheet-height: 72px;
 $spritesheet-image: 'sprite.png';
-$spritesheet-sprites: ($sprite-photo, $sprite-play, );
-$spritesheet: (16px, 24px, 'sprite.png', $spritesheet-sprites, );
+$spritesheet-sprites: ($sprite-next, $sprite-photo, $sprite-play, $sprite-prev, );
+$spritesheet: (16px, 72px, 'sprite.png', $spritesheet-sprites, );
 
 /*
 The provided mixins are intended to be used with the array-like variables

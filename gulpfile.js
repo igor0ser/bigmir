@@ -2,6 +2,7 @@
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var rigger = require('gulp-rigger');
 var spritesmith = require('gulp.spritesmith');
 var open = require('gulp-open');
 var postcss = require('gulp-postcss');
@@ -43,4 +44,8 @@ gulp.task('open', function(){
 	gulp.src('').pipe(open(options));
 });
 
-
+gulp.task('rr', function () {
+	gulp.src('app/index.html')
+		.pipe(rigger())
+		.pipe(gulp.dest('dist/'));
+});

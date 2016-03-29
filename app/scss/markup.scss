@@ -1,0 +1,16 @@
+.container {
+	width: 940px;
+	margin: 32px auto 68px;
+	@include clearfix;
+}
+
+.left {
+	width: 620px;
+	float: left;
+	margin-right: 20px;
+}
+
+.right {
+	width: 300px;
+	float: left;
+}

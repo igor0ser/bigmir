@@ -1,17 +1,10 @@
+@import 'fonts';
 @import 'sprite';
+@import 'variable';
+@import 'mixin';
 
-body {
-	background: gold;
-	color: #fff;
-}
+@import 'markup';
+@import 'body';
 
-h1:before{
-	content: '';
-	display: block;
-	@include sprite($sprite-photo);
-}
-
-h1 {
-	animation: logo 2s;
-	filter: grayscale(100%) sepia(100%);
-}
+@import 'nav/nav';
+@import 'slider/slider';

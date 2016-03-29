@@ -1,0 +1,62 @@
+.slider {
+	@include clearfix;
+	margin-top: 22px;
+	background: #f7f9fa;
+	overflow: hidden;
+	border-bottom: 5px solid $border-color;
+	
+	&__img {
+		width: 377px;
+		height: 250px;
+		float: left;
+	}
+
+	&__content {
+		width: 220px;
+		height: 210px;
+		margin-left: 22px;
+		float: left;
+		padding: 5px 25px 0 0;
+	}
+
+	&__header {
+		font-size: 30px;
+		font-family: "PT Serif";
+		line-height: 1.2;
+		color: $border-color;
+	}
+
+	&__text {
+		line-height: 1.286;
+		margin-top: 10px;
+	}
+
+	&__nav {
+		@include clearfix;
+		float: right;
+		margin-right: 15px;
+		background: gold;
+
+		&__prev,
+		&__next {
+			float: left;
+		}
+
+		&__prev {
+			@include sprite($sprite-prev);
+		}
+
+		&__next {
+			@include sprite($sprite-next);
+		}
+
+		&__pages {
+			float: left;
+		}
+
+	}
+
+
+}
+
+
