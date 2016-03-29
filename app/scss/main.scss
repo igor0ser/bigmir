@@ -1,0 +1,17 @@
+@import 'sprite';
+
+body {
+	background: gold;
+	color: #fff;
+}
+
+h1:before{
+	content: '';
+	display: block;
+	@include sprite($sprite-photo);
+}
+
+h1 {
+	animation: logo 2s;
+	filter: grayscale(100%) sepia(100%);
+}
